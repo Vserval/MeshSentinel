@@ -1,0 +1,80 @@
+﻿record,mesh,rule,severity,component,ids,status,message
+report,,,,,,complete,2026-09-06T15:41:03.617655+00:00
+settings,,,,,,selected,distance=1e-05 cm; area=1e-10 cm^2; aspect=100.0; pair_budget=2000000
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,nonmanifold,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,degenerate,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,zero_edge,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,duplicate_vertex,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,duplicate_face,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,internal,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,intersection,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,normals,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,boundary,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,t_junction,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,sliver,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,ngon,,,,complete,
+check,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,concave,,,,complete,
+finding,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,intersection,error,f,0 1,complete,同一メッシュ内の交差・共面重複。接続していない面同士の非共面接触を含む
+finding,|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3,boundary,warning,e,0 1 2 3 4 5,complete,開いた境界。意図した開口も対象
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,nonmanifold,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,degenerate,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,zero_edge,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,duplicate_vertex,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,duplicate_face,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,internal,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,intersection,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,normals,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,boundary,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,t_junction,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,sliver,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,ngon,,,,complete,
+check,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,concave,,,,complete,
+finding,|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape,normals,review,f,0 1 2 3 4 5,complete,閉殻の符号付き体積が負。空洞の内壁・ミラー変換の場合は意図を確認
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,nonmanifold,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,degenerate,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,zero_edge,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,duplicate_vertex,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,duplicate_face,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,internal,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,intersection,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,normals,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,boundary,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,t_junction,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,sliver,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,ngon,,,,complete,
+check,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,concave,,,,complete,
+finding,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,boundary,warning,e,0 1 2 3 4,complete,開いた境界。意図した開口も対象
+finding,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,ngon,warning,f,0,complete,5頂点以上のポリゴン
+finding,|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1,concave,warning,f,0,complete,凹形状のN-gon。非平面ポリゴンでは三角形分割も確認してください
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,nonmanifold,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,degenerate,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,zero_edge,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,duplicate_vertex,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,duplicate_face,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,internal,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,intersection,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,normals,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,boundary,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,t_junction,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,sliver,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,ngon,,,,complete,
+check,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,concave,,,,complete,
+finding,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,duplicate_vertex,warning,vtx,0 1 2 3 4 5,complete,同一メッシュ内の別頂点と距離許容誤差以内
+finding,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,duplicate_face,error,f,0 1,complete,巡回頂点列が幾何的に一致（逆向きを含む）
+finding,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,intersection,error,f,0 1,complete,同一メッシュ内の交差・共面重複。接続していない面同士の非共面接触を含む
+finding,|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2,boundary,warning,e,0 1 2 3 4 5,complete,開いた境界。意図した開口も対象
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,nonmanifold,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,degenerate,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,zero_edge,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,duplicate_vertex,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,duplicate_face,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,internal,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,intersection,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,normals,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,boundary,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,t_junction,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,sliver,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,ngon,,,,complete,
+check,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,concave,,,,complete,
+finding,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,boundary,warning,e,0 1 2,complete,開いた境界。意図した開口も対象
+finding,|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4,sliver,warning,f,0,complete,最長辺 / 最小高度 ≥ 100（三角形面のみ）

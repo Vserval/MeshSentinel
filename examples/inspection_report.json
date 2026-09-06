@@ -1,0 +1,394 @@
+{
+  "created": "2026-09-06T15:41:03.617655+00:00",
+  "settings": {
+    "distance": 1e-05,
+    "area": 1e-10,
+    "aspect": 100.0,
+    "pair_budget": 2000000,
+    "enabled": [
+      "nonmanifold",
+      "degenerate",
+      "zero_edge",
+      "duplicate_vertex",
+      "duplicate_face",
+      "internal",
+      "intersection",
+      "normals",
+      "boundary",
+      "t_junction",
+      "sliver",
+      "ngon",
+      "concave"
+    ]
+  },
+  "meshes": [
+    {
+      "path": "|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3",
+      "uuid": "A9BD34E8-48C0-F029-95E1-1F9F9C3471B2",
+      "fingerprint": "3b5927547dd28e12abd9c0030ad4eccd7cdd286b234717d2d2378b12c7e3cc04",
+      "vertices": 6,
+      "faces": 2,
+      "findings": [
+        {
+          "rule": "intersection",
+          "mesh": "|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3",
+          "component": "f",
+          "ids": [
+            0,
+            1
+          ],
+          "message": "同一メッシュ内の交差・共面重複。接続していない面同士の非共面接触を含む",
+          "severity": "error"
+        },
+        {
+          "rule": "boundary",
+          "mesh": "|MeshSentinel_Demo1|Bracket_SelfIntersection|polySurfaceShape3",
+          "component": "e",
+          "ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "message": "開いた境界。意図した開口も対象",
+          "severity": "warning"
+        }
+      ],
+      "checks": {
+        "nonmanifold": "complete",
+        "degenerate": "complete",
+        "zero_edge": "complete",
+        "duplicate_vertex": "complete",
+        "duplicate_face": "complete",
+        "internal": "complete",
+        "intersection": "complete",
+        "normals": "complete",
+        "boundary": "complete",
+        "t_junction": "complete",
+        "sliver": "complete",
+        "ngon": "complete",
+        "concave": "complete"
+      },
+      "notes": [],
+      "seconds": 0.0005883999983780086
+    },
+    {
+      "path": "|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape",
+      "uuid": "1772E5F0-4BBF-2B6D-5838-3CABDCC4BCB5",
+      "fingerprint": "1527782582ed518b893431a710e473c22db192989c6bfa86a4a211c316b58454",
+      "vertices": 8,
+      "faces": 6,
+      "findings": [
+        {
+          "rule": "normals",
+          "mesh": "|MeshSentinel_Demo1|Housing_InwardNormals|Housing_InwardNormalsShape",
+          "component": "f",
+          "ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "message": "閉殻の符号付き体積が負。空洞の内壁・ミラー変換の場合は意図を確認",
+          "severity": "review"
+        }
+      ],
+      "checks": {
+        "nonmanifold": "complete",
+        "degenerate": "complete",
+        "zero_edge": "complete",
+        "duplicate_vertex": "complete",
+        "duplicate_face": "complete",
+        "internal": "complete",
+        "intersection": "complete",
+        "normals": "complete",
+        "boundary": "complete",
+        "t_junction": "complete",
+        "sliver": "complete",
+        "ngon": "complete",
+        "concave": "complete"
+      },
+      "notes": [],
+      "seconds": 0.0014105999980529305
+    },
+    {
+      "path": "|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1",
+      "uuid": "ED6EEC86-49E9-F537-A19A-7693AAE734A9",
+      "fingerprint": "2b4b455a2662a970db63c1b8d9ce6f47a12ab128b4e77801270507fc9973fef7",
+      "vertices": 5,
+      "faces": 1,
+      "findings": [
+        {
+          "rule": "boundary",
+          "mesh": "|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1",
+          "component": "e",
+          "ids": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "message": "開いた境界。意図した開口も対象",
+          "severity": "warning"
+        },
+        {
+          "rule": "ngon",
+          "mesh": "|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1",
+          "component": "f",
+          "ids": [
+            0
+          ],
+          "message": "5頂点以上のポリゴン",
+          "severity": "warning"
+        },
+        {
+          "rule": "concave",
+          "mesh": "|MeshSentinel_Demo1|Panel_ConcaveNgon|polySurfaceShape1",
+          "component": "f",
+          "ids": [
+            0
+          ],
+          "message": "凹形状のN-gon。非平面ポリゴンでは三角形分割も確認してください",
+          "severity": "warning"
+        }
+      ],
+      "checks": {
+        "nonmanifold": "complete",
+        "degenerate": "complete",
+        "zero_edge": "complete",
+        "duplicate_vertex": "complete",
+        "duplicate_face": "complete",
+        "internal": "complete",
+        "intersection": "complete",
+        "normals": "complete",
+        "boundary": "complete",
+        "t_junction": "complete",
+        "sliver": "complete",
+        "ngon": "complete",
+        "concave": "complete"
+      },
+      "notes": [],
+      "seconds": 0.00027550000231713057
+    },
+    {
+      "path": "|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2",
+      "uuid": "CFE77B04-49A4-E9C4-B604-1B9C3226CF00",
+      "fingerprint": "85e4b58c346b6f6b876481b24193aa2172b76b37cba9d356a8c3461a08431272",
+      "vertices": 6,
+      "faces": 2,
+      "findings": [
+        {
+          "rule": "duplicate_vertex",
+          "mesh": "|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2",
+          "component": "vtx",
+          "ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "message": "同一メッシュ内の別頂点と距離許容誤差以内",
+          "severity": "warning"
+        },
+        {
+          "rule": "duplicate_face",
+          "mesh": "|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2",
+          "component": "f",
+          "ids": [
+            0,
+            1
+          ],
+          "message": "巡回頂点列が幾何的に一致（逆向きを含む）",
+          "severity": "error"
+        },
+        {
+          "rule": "intersection",
+          "mesh": "|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2",
+          "component": "f",
+          "ids": [
+            0,
+            1
+          ],
+          "message": "同一メッシュ内の交差・共面重複。接続していない面同士の非共面接触を含む",
+          "severity": "error"
+        },
+        {
+          "rule": "boundary",
+          "mesh": "|MeshSentinel_Demo1|Plate_DuplicateFaces|polySurfaceShape2",
+          "component": "e",
+          "ids": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "message": "開いた境界。意図した開口も対象",
+          "severity": "warning"
+        }
+      ],
+      "checks": {
+        "nonmanifold": "complete",
+        "degenerate": "complete",
+        "zero_edge": "complete",
+        "duplicate_vertex": "complete",
+        "duplicate_face": "complete",
+        "internal": "complete",
+        "intersection": "complete",
+        "normals": "complete",
+        "boundary": "complete",
+        "t_junction": "complete",
+        "sliver": "complete",
+        "ngon": "complete",
+        "concave": "complete"
+      },
+      "notes": [],
+      "seconds": 0.00037990000055287965
+    },
+    {
+      "path": "|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4",
+      "uuid": "C5DAA668-4A22-8E00-9D39-44B199908781",
+      "fingerprint": "98a4de159d0056d7e0c522de11977f606ffb969b808e84dfc4562a3501d1227c",
+      "vertices": 3,
+      "faces": 1,
+      "findings": [
+        {
+          "rule": "boundary",
+          "mesh": "|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4",
+          "component": "e",
+          "ids": [
+            0,
+            1,
+            2
+          ],
+          "message": "開いた境界。意図した開口も対象",
+          "severity": "warning"
+        },
+        {
+          "rule": "sliver",
+          "mesh": "|MeshSentinel_Demo1|Trim_Sliver|polySurfaceShape4",
+          "component": "f",
+          "ids": [
+            0
+          ],
+          "message": "最長辺 / 最小高度 ≥ 100（三角形面のみ）",
+          "severity": "warning"
+        }
+      ],
+      "checks": {
+        "nonmanifold": "complete",
+        "degenerate": "complete",
+        "zero_edge": "complete",
+        "duplicate_vertex": "complete",
+        "duplicate_face": "complete",
+        "internal": "complete",
+        "intersection": "complete",
+        "normals": "complete",
+        "boundary": "complete",
+        "t_junction": "complete",
+        "sliver": "complete",
+        "ngon": "complete",
+        "concave": "complete"
+      },
+      "notes": [],
+      "seconds": 0.00019109999993816018
+    }
+  ],
+  "errors": [],
+  "cancelled": false,
+  "version": "1.7.0-rc1",
+  "scope": "selected",
+  "complete": true,
+  "units": {
+    "distance": "cm (world space)",
+    "area": "cm^2"
+  },
+  "rules": {
+    "nonmanifold": {
+      "key": "nonmanifold",
+      "title": "非多様体",
+      "severity": "error",
+      "description": "3面以上を共有するエッジ、面の接続が分岐する頂点を検出。"
+    },
+    "degenerate": {
+      "key": "degenerate",
+      "title": "縮退面",
+      "severity": "error",
+      "description": "面積が閾値以下、頂点の繰り返し、無効な三角形分割を検出。"
+    },
+    "zero_edge": {
+      "key": "zero_edge",
+      "title": "ゼロ長エッジ",
+      "severity": "error",
+      "description": "両端の距離が距離許容誤差以下のエッジを検出。"
+    },
+    "duplicate_vertex": {
+      "key": "duplicate_vertex",
+      "title": "重複頂点",
+      "severity": "warning",
+      "description": "異なる頂点IDが距離許容誤差以内にある組を検出。意図したシームも対象。"
+    },
+    "duplicate_face": {
+      "key": "duplicate_face",
+      "title": "重複面",
+      "severity": "error",
+      "description": "頂点の巡回順が同じ、または逆向きで、対応座標が許容誤差以内の面を検出。"
+    },
+    "internal": {
+      "key": "internal",
+      "title": "内部面の候補",
+      "severity": "review",
+      "description": "閉じた多様体シェル内に完全に入る別の面を検出。意図した内殻も候補。"
+    },
+    "intersection": {
+      "key": "intersection",
+      "title": "自己交差",
+      "severity": "error",
+      "description": "同一メッシュ内の三角形の交差と共面の面積重複を検出。正常な共有辺・頂点の接触を除外。"
+    },
+    "normals": {
+      "key": "normals",
+      "title": "法線反転・不整合",
+      "severity": "review",
+      "description": "隣接面の巻き順不整合、閉殻の内向き、面と逆向きのコーナー法線を検出。意図の確認が必要。"
+    },
+    "boundary": {
+      "key": "boundary",
+      "title": "穴・開いたエッジ",
+      "severity": "warning",
+      "description": "1面のみが接続する境界エッジと、Mayaが穴付きと判定した面を検出。"
+    },
+    "t_junction": {
+      "key": "t_junction",
+      "title": "Tジャンクション",
+      "severity": "warning",
+      "description": "エッジに接続していない頂点がエッジの内部に位置する候補を検出。"
+    },
+    "sliver": {
+      "key": "sliver",
+      "title": "細長い三角形",
+      "severity": "warning",
+      "description": "三角形面の最長辺÷最小高度が閾値以上の面を検出。"
+    },
+    "ngon": {
+      "key": "ngon",
+      "title": "N-gon",
+      "severity": "warning",
+      "description": "5頂点以上の面を検出。"
+    },
+    "concave": {
+      "key": "concave",
+      "title": "凹N-gon",
+      "severity": "warning",
+      "description": "5頂点以上で凹形状の面を検出。MayaのisConvex判定を使用。"
+    }
+  }
+}
